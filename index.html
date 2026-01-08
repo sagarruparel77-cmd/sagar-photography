@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sagar Ruparel Photography</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;color:#222}
+
+/* HERO */
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("https://images.unsplash.com/photo-1519741497674-611481863552") center/cover no-repeat;
+display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero h1{font-family:'Playfair Display';font-size:46px}
+.hero p{margin:15px 0}
+.btn{
+padding:12px 32px;background:#fff;color:#000;
+border-radius:30px;text-decoration:none;font-weight:500}
+
+/* SECTION */
+section{padding:80px 10%}
+h2{font-family:'Playfair Display';font-size:32px;margin-bottom:20px}
+
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px}
+.gallery img{
+width:100%;
+border-radius:10px}
+
+/* CONTACT */
+.contact{
+background:#111;color:#fff;text-align:center}
+.contact input,.contact textarea{
+width:100%;
+padding:12px;margin:10px 0;border:none;border-radius:6px}
+.contact button{
+padding:12px 30px;border:none;border-radius:30px;
+background:#fff;color:#000;font-weight:500}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;bottom:20px;right:20px;
+background:#25D366;color:#fff;
+padding:14px 20px;border-radius:50px;
+text-decoration:none;font-weight:500}
+
+/* FOOTER */
+footer{
+background:#000;color:#aaa;text-align:center;padding:20px}
+
+/* MOBILE */
+@media(max-width:768px){
+.hero h1{font-size:34px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+  <div>
+    <h1>Sagar Ruparel Photography</h1>
+    <p>Wedding • Pre-Wedding • Maternity</p>
+    <a href="#contact" class="btn">Book Your Shoot</a>
+  </div>
+</div>
+
+<section>
+<h2>Wedding Photography</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc">
+<img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+<img src="https://images.unsplash.com/photo-1521337581100-8ca9a73a5f79">
+</div>
+</section>
+
+<section>
+<h2>Pre-Wedding Photography</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+<img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+</div>
+</section>
+
+<section>
+<h2>Maternity Photography</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact & Booking</h2>
+<p>📍 Raipur / Chhattisgarh</p>
+<p>📞 8966917071 | 9039638811</p>
+
+<form action="https://formspree.io/f/xayrzzqb" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="tel" name="phone" placeholder="Phone Number" required>
+<textarea name="message" placeholder="Your Requirement"></textarea>
+<button type="submit">Send Inquiry</button>
+</form>
+</section>
+
+<footer>
+© 2025 Sagar Ruparel Photography
+</footer>
+
+<a class="whatsapp" href="https://wa.me/918966917071" target="_blank">
+WhatsApp
+</a>
+
+</body>
+</html>
