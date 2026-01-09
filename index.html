@@ -8,60 +8,95 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Poppins,sans-serif;color:#222}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background:#fff;
+  color:#111;
+}
 
 /* HERO */
 .hero{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-url("https://images.unsplash.com/photo-1519741497674-611481863552") center/cover no-repeat;
-display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
-.hero h1{font-family:'Playfair Display';font-size:46px}
-.hero p{margin:15px 0}
-.btn{
-padding:12px 32px;background:#fff;color:#000;
-border-radius:30px;text-decoration:none;font-weight:500}
+  height:100vh;
+  background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+  url("https://images.unsplash.com/photo-1520857014576-2c4f4c972b57");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+}
 
-/* SECTION */
-section{padding:80px 10%}
-h2{font-family:'Playfair Display';font-size:32px;margin-bottom:20px}
+.hero h1{
+  font-family:'Playfair Display', serif;
+  font-size:48px;
+}
+
+.hero p{
+  margin:15px 0;
+}
+
+/* SECTIONS */
+section{
+  padding:60px 20px;
+}
+
+h2{
+  font-family:'Playfair Display', serif;
+  font-size:32px;
+  margin-bottom:25px;
+}
 
 /* GALLERY */
 .gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px}
-.gallery img{
-width:100%;
-border-radius:10px}
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
 
-/* CONTACT */
-.contact{
-background:#111;color:#fff;text-align:center}
-.contact input,.contact textarea{
-width:100%;
-padding:12px;margin:10px 0;border:none;border-radius:6px}
-.contact button{
-padding:12px 30px;border:none;border-radius:30px;
-background:#fff;color:#000;font-weight:500}
+.gallery img{
+  width:100%;
+  height:auto;
+  border-radius:14px;
+  display:block;
+}
 
 /* WHATSAPP */
 .whatsapp{
-position:fixed;bottom:20px;right:20px;
-background:#25D366;color:#fff;
-padding:14px 20px;border-radius:50px;
-text-decoration:none;font-weight:500}
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  padding:14px 22px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  z-index:999;
+}
 
 /* FOOTER */
 footer{
-background:#000;color:#aaa;text-align:center;padding:20px}
+  background:#000;
+  color:#aaa;
+  text-align:center;
+  padding:20px;
+}
 
 /* MOBILE */
 @media(max-width:768px){
-.hero h1{font-size:34px}
+  .hero h1{font-size:34px;}
+  h2{font-size:26px;}
 }
 </style>
+
 </head>
 
 <body>
